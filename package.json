@@ -1,0 +1,24 @@
+{
+  "name": "expert-winner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uppishdonkey/expert-winner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uppishdonkey/expert-winner/issues"
+  },
+  "homepage": "https://github.com/uppishdonkey/expert-winner#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "mysql2": "^2.2.5"
+  }
+}

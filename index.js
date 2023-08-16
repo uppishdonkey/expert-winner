@@ -179,11 +179,12 @@ function updateRole() {
         message: "What new role does the employee have?",
         choices: roles
       }])
-      .then(response => {
-        db.query("UPDATE employee SET role_id = (?) WHERE id = (?)", [response.role, response.employee], function (err, res) {
-          console.log("Employee updated!");
-          init();
+        .then(response => {
+          db.query("UPDATE employee SET role_id = (?) WHERE id = (?)", [response.role, response.employee], function (err, res) {
+            console.log("Employee updated!");
+            init();
+          })
         })
     })
-  })})
-      };
+  })
+};

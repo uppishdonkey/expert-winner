@@ -11,7 +11,7 @@ async function mainApp() {
     const db = await mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'password',
+    password: 'Call73dissolve',
     database: 'employees_db'
   });
     console.log('Connected to the database.');

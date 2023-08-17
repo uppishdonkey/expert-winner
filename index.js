@@ -20,7 +20,7 @@ function init() {
     }
   ])
     .then((response) => {
-      console.log(response);
+      console.log({ response });
 
       if (response.userChoice === "View all departments") {
         viewDepartments();
@@ -44,14 +44,19 @@ function init() {
       else if (response.userChoice === "Update employee role") {
         updateRole();
       }
+      else {
+        process.exit(1);
+      }
     });
 
   function viewDepartments() {
-    db.query('SELECT * FROM department', function (err, results) {
+    db.promise().query('SELECT * FROM department'
+
+    ).then((results) => {
       console.table(results)
       init();
-    });
-  }
+    }).catch(err => console.log(err))
+  };
 
   function viewRoles() {
     db.query('SELECT role.id, role.title, role.salary, department.name FROM role LEFT JOIN department ON role.department_id = department.id', function (err, results) {

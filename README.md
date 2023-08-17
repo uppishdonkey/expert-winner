@@ -1,6 +1,22 @@
-# Module 12 Challenge 
 
-## Description
-When the user is given a command-line application that accepts user input and starts the application, then the user is presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role. When the user chooses to view all departments, then the user is presented with a formatted table showing department names and department ids. When the user chooses to view all roles, then the user is presented with the job title, role id, the department that role belongs to, and the salary for that role. When the user chooses to view all employees, then I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to. When the user chooses to add a department, then the user is prompted to enter the name of the department and that department is added to the database. When the user chooses to add a role, then the user is prompted to enter the name, salary, and department for the role and that role is added to the database. When the user chooses to add an employee, then the user is prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database. When the user chooses to update an employee role, then the user is prompted to select an employee to update and their new role and this information is updated in the database.
+  # Module 12 Challenge
 
-## Walkthrough Video
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  ## Description
+  This challenge project demonstrates the ability to create a CMS system that uses inquirer and MySql2 to easily interact with information stored in a database. In this case, a company's department and employee database.
+
+  ## Table of Contents 
+  - [Usage](#usage)
+  - [License](#license)
+  - [Questions](#questions)
+
+  ## Usage
+  Click [here](https://drive.google.com/file/d/1pCDiVGMq1qNqxavGy9yuBi374JFO4T8v/view) to see a video of the server in action!
+
+  ## License
+  MIT
+  
+  ## Questions
+  If you have any questions I can be reached at delantetr@gmail.com.
+  Github: https://github.com/delantetr/verbose-giggle
